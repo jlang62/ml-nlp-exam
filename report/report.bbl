@@ -1,0 +1,35 @@
+\begin{thebibliography}{xx}
+
+\harvarditem[Bird et~al.]{Bird, Klein \harvardand\ Loper}{2009}{nltk}
+Bird, S., Klein, E. \harvardand\ Loper, E.  \harvardyearleft
+  2009\harvardyearright , {\em Natural Language Processing with Python},
+  O'Reilly Media, Inc.
+
+\harvarditem[Harris et~al.]{Harris, Millman \harvardand\ van~der
+  Walt}{2020}{numpy}
+Harris, C., Millman, K. \harvardand\ van~der Walt, S. e.~a.  \harvardyearleft
+  2020\harvardyearright , `Array programming with numpy'.
+
+\harvarditem{Lane}{2019}{lane2019}
+Lane, H.  \harvardyearleft 2019\harvardyearright , {\em Natural Language
+  Processing in Action: Understanding, Analyzing, and Generating Text with
+  Python}, 1st edn, Manning.
+
+\harvarditem{{\em Matplotlib—Visualization with Python}}{n.d.}{matplotlib}
+{\em Matplotlib—Visualization with Python}  \harvardyearleft
+  n.d.\harvardyearright , \url{https://matplotlib.org/}.
+\newblock Retrieved 28 October 2023.
+
+\harvarditem[Pedregosa et~al.]{Pedregosa, Varoquaux, Gramfort, Michel, Thirion,
+  Grisel \harvardand\ Duchesnay}{2011}{scikit-learn}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O.
+  \harvardand\ Duchesnay, E.  \harvardyearleft 2011\harvardyearright ,
+  `Scikit-learn: Machine learning in python', {\em Journal of Machine Learning
+  Research} .
+
+\harvarditem{{\em Python Data Analysis Library}}{n.d.}{pandas}
+{\em Python Data Analysis Library}  \harvardyearleft n.d.\harvardyearright ,
+  \url{https://pandas.pydata.org}.
+\newblock Retrieved 28 October 2023.
+
+\end{thebibliography}
