@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex report"] 1701859564 "report.aux" "report.bbl" "report" 1701859610 0
+["bibtex report"] 1701861341 "report.aux" "report.bbl" "report" 1701861651 0
   "./sample.bib" 1698670316 1120 666389175f688f51f81595ab26051d16 ""
   "/opt/texlive/texdir/texmf-dist/bibtex/bst/harvard/agsm.bst" 1136766823 25549 e3d0f1ab4ae55e777f7352db30e2c6f7 ""
-  "report.aux" 1701859610 4435 e992b44b06481ffe63c2615d8e5acebc "pdflatex"
+  "report.aux" 1701861650 4435 f66743b9ab1f839c63b2899c5d1e41a9 "pdflatex"
   (generated)
   "report.bbl"
   "report.blg"
   (rewritten before read)
-["pdflatex"] 1701859608 "report.tex" "report.pdf" "report" 1701859610 0
+["pdflatex"] 1701861647 "report.tex" "report.pdf" "report" 1701861651 0
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/texlive/texdir/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1136849721 2971 def0b6c1f0b107b3b936def894055589 ""
   "/opt/texlive/texdir/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -120,10 +120,28 @@
   "/opt/texlive/texdir/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1696122464 4681908 5e0ef1164c1e47ea0c04659a46b3416a ""
   "/opt/texlive/texdir/texmf-var/web2c/pdftex/pdflatex.fmt" 1696122598 8182891 85e7bb959a85025f30caad784d20505b ""
   "/opt/texlive/texdir/texmf.cnf" 1696122456 555 bd60ff59e4d560b42d96b004436f91d3 ""
-  "report.aux" 1701859610 4435 e992b44b06481ffe63c2615d8e5acebc "pdflatex"
-  "report.bbl" 1701859564 1541 ecdedb27aef1adcb3efa7f45e2168c0f "bibtex report"
-  "report.out" 1701859610 3720 f761d4508db6fcacf78b74e446d67296 "pdflatex"
-  "report.tex" 1701859607 34373 da61de74a9b6d08e34c6819faf1331bf ""
+  "img/bubble.png" 1701860661 557578 b65cccce24c5f006c759828698f6cf8f ""
+  "img/classcompare.png" 1701860118 40247 de8fd3c8b0d8d2f41bf461ffb901240c ""
+  "img/cluschart.png" 1701860495 52148 a87abb7d6de98a20fcc9183dccb54e61 ""
+  "img/dl1.png" 1701860922 222270 7f9764f04efa6330724edff4e60e3aa0 ""
+  "img/dl2.png" 1701860930 21662 4f238c4e5e7f35ea067af60ca307d498 ""
+  "img/dl3.png" 1701860937 21246 f66e68cfbec1eb7974a471dc0023848f ""
+  "img/heatDL.png" 1701860846 62223 c3e1c4971f632e6845a49dada7616e1b ""
+  "img/heatmap.png" 1701860090 45932 b3d3397a30b20f9980d484b9ad215196 ""
+  "img/nlp1.png" 1701861284 109012 37ca2308f2f0c6a7c24b4d23977b1fa5 ""
+  "img/nlp2.png" 1701861292 112022 8955fe51ba8d09bc1021aa13f371b616 ""
+  "img/nlp3.png" 1701861406 29126 67b4a89d13abc40031ea8da07a9e0c83 ""
+  "img/nlp4.png" 1701861507 135889 a4dedaec382997ec199185335a2e47a3 ""
+  "img/nlp5.png" 1701861584 121838 63f0317ecdee33d57078581846005296 ""
+  "img/nlp6.png" 1701861589 100191 a89dab50fd53c0a6b30cafc76eba3791 ""
+  "img/norm1.png" 1701859729 224283 e722ee88b808003311e5a1fc75a722bf ""
+  "img/norm2.png" 1701859729 212929 537552de7772f0579d4df5ff3655df78 ""
+  "img/scatter.png" 1701860762 392605 691d869b57f790dee1c0479024daf2e1 ""
+  "img/tableclus.png" 1701860367 29966 8ec403692cb938f4c62cfa8c03f0c6bd ""
+  "report.aux" 1701861650 4435 f66743b9ab1f839c63b2899c5d1e41a9 "pdflatex"
+  "report.bbl" 1701861341 1541 ecdedb27aef1adcb3efa7f45e2168c0f "bibtex report"
+  "report.out" 1701861650 3720 f761d4508db6fcacf78b74e446d67296 "pdflatex"
+  "report.tex" 1701861646 36543 ce308e16b677e6e19fc0c72255f45ab5 ""
   (generated)
   "report.aux"
   "report.log"

@@ -134,9 +134,28 @@ This pipeline used the implementation of the KNeighborsRegressor (scikit-learn.o
 
 Libraries like sklearn provide functions to normalise the dataset for a more equal distribution. Normalization is the process of applying a casting of a specific range (e.g., 0 and 1, or between -1 and +1) to the dataset. This method is essential when there are big differences in the arrays of different features. Furthermore, this way of scaling is convenient when the data set does not contain any outliers (Ali et al., 2014).
 
-Figure X visualizes the normalization process and the necessary steps to cast it to the range 0, 1. To get the normalized value, the equation \(x' = \frac{x - \text{min}}{\text{max} - \text{min}}\) can be used, where \(x\) represents the value before and \(x'\) after normalization. The other two values are the minimum and maximum values of the given feature array.
+% insert image
+\includegraphics[scale=.35]{img/norm1.png}
 
-In order to normalize them to the range -1, +1 (see Figure X), the formula has to be adjusted to \(x' = 2 \left( \frac{x - \text{min}}{\text{max} - \text{min}} \right) - 1\) (Ali et al., 2014).
+{\small
+  Figure 1: Normalization to the range 0 to +1
+  \par
+  \vspace{6pt}
+}
+
+
+Figure 1 visualizes the normalization process and the necessary steps to cast it to the range 0, 1. To get the normalized value, the equation \(x' = \frac{x - \text{min}}{\text{max} - \text{min}}\) can be used, where \(x\) represents the value before and \(x'\) after normalization. The other two values are the minimum and maximum values of the given feature array.
+
+\includegraphics[scale=.35]{img/norm2.png}
+
+{\small
+  Figure 2: Normalization to the range -1 to +1
+  \par
+  \vspace{6pt}
+}
+
+
+In order to normalize them to the range -1, +1 (see Figure 2), the formula has to be adjusted to \(x' = 2 \left( \frac{x - \text{min}}{\text{max} - \text{min}} \right) - 1\) (Ali et al., 2014).
 
 
 \subsection{Machine Learning}
@@ -226,9 +245,25 @@ The analysis of both Machine Learning and Natural Language Processing included v
 
 \subsubsection{Classification}
 
-The evaluation of classification algorithms for complex health datasets started with the understanding of variable interrelations via a correlation heatmap (Figure X). The Heatmap was key in the investigation, because it showed us various scenarios where the expected linear correlations were clearly missing, between key health variables like heart rate, blood pressure, cholesterol, blood sugar, and risk levels. The weak correlation we see in the heatmap influenced our decision to explore a series of models for this complicated data environment.
+\includegraphics[scale=.3]{img/heatmap.png}
 
-With the understanding derived from these heatmap findings, the investigation moved to a performance chart (Figure X), which cast a spotlight on the comparative speed and accuracy of several algorithms. Logistic Regression dashed through the computations with remarkable speed, clocking in at 0.3 seconds, but its accuracy lagged, not quite capturing the complexity of the data as evidenced by its 0.39 accuracy score. The K-Nearest Neighbors (KNN) algorithm showed remarkable flexibility. By prioritizing the proximity of data neighbors over direct linear correlations, KNN showcased good balance with an accuracy of 0.41 and a run time of 3.27 seconds, positioning itself as a worthy contender in the algorithmic lineup.
+{\small
+  Figure 3: Heatmap
+  \par
+  \vspace{6pt}
+}
+
+\includegraphics[scale=.27]{img/classcompare.png}
+
+{\small
+  Figure 4: Performance Chart
+  \par
+  \vspace{6pt}
+}
+
+The evaluation of classification algorithms for complex health datasets started with the understanding of variable interrelations via a correlation heatmap (Figure 3). The Heatmap was key in the investigation, because it showed us various scenarios where the expected linear correlations were clearly missing, between key health variables like heart rate, blood pressure, cholesterol, blood sugar, and risk levels. The weak correlation we see in the heatmap influenced our decision to explore a series of models for this complicated data environment.
+
+With the understanding derived from these heatmap findings, the investigation moved to a performance chart (Figure 4), which cast a spotlight on the comparative speed and accuracy of several algorithms. Logistic Regression dashed through the computations with remarkable speed, clocking in at 0.3 seconds, but its accuracy lagged, not quite capturing the complexity of the data as evidenced by its 0.39 accuracy score. The K-Nearest Neighbors (KNN) algorithm showed remarkable flexibility. By prioritizing the proximity of data neighbors over direct linear correlations, KNN showcased good balance with an accuracy of 0.41 and a run time of 3.27 seconds, positioning itself as a worthy contender in the algorithmic lineup.
 
 Next we looked at Support Vector Machine (SVM), despite its skill in managing datasets with intricate feature sets, it showed a slower performance, having a run time of 27.84 seconds, while still maintaining accuracy on par with KNN. With the addition of Random Forest and XGBoost, the situation intensified. Unexpectedly, they matched the accuracy of SVM and KNN, yet offered faster processing speeds.
 
@@ -237,13 +272,45 @@ The analysis of both the heatmap and the performance chart helped us discover ho
 
 \subsubsection{Clustering}
 
-The analysis to understand city traffic started by looking closely at the basic numbers (Figure X). This first look was key—it showed us that the simple connections we expected to find, like how fast traffic moves and how bad the jams are, weren't always there. The twist in the numbers made us realize that traffic has a lot of moving parts that could affect each other in complicated ways, challenging what we usually think about how traffic works. We also saw groups of data that seemed to share certain traffic traits, suggesting that we need to think carefully about different types of traffic situations when analyzing jams.
+The analysis to understand city traffic started by looking closely at the basic numbers (Figure 5). This first look was key—it showed us that the simple connections we expected to find, like how fast traffic moves and how bad the jams are, weren't always there. The twist in the numbers made us realize that traffic has a lot of moving parts that could affect each other in complicated ways, challenging what we usually think about how traffic works. We also saw groups of data that seemed to share certain traffic traits, suggesting that we need to think carefully about different types of traffic situations when analyzing jams.
 
-Next we moved on to a bar graph that compared important traffic details across various levels of jam-packed roads (Figure X). This chart helped us see the little, important changes in things like speed, how long people wait, and how far they travel, depending on how congested the roads are. Making all these different details comparable by normalizing them helped us spot trends that we might miss if we only looked at the raw data. This graph was really useful for understanding how different levels of congestion affect people's daily drives.
+\includegraphics[scale=.52]{img/tableclus.png}
 
-Then, we brought in a bubble chart (Figure X) that showed us how long people wait in relation to how congested the roads are, using colors to show different groups of traffic conditions. This chart helped us pick apart the tricky relationship between how long you're stuck waiting and how crowded the roads are. The different colors helped us see patterns in traffic that we might want to look at more closely. This detailed view showed us the variety in traffic conditions and set us up to dig deeper into these patterns.
+{\small
+  Figure 5: Table of Clusters
+  \par
+  \vspace{6pt}
+}
 
-Adding to the analysis, we examined a scatter plot (Figure X) that scattered waiting times against traffic congestion scores. Unlike the patterns we expected, this plot revealed no clear-cut line linking waiting times and congestion. Instead, we saw a wide spread of congestion scores, cutting across all waiting times, hinting at a complex web of factors that come into play. The different colors, likely representing various clusters of traffic conditions, painted a picture of the diverse traffic scenarios in play. This deep dive into the data points showed that there's more to congestion than meets the eye, reinforcing the idea that to untangle traffic issues, we need to look beyond the obvious.
+Next we moved on to a bar graph that compared important traffic details across various levels of jam-packed roads (Figure 6). This chart helped us see the little, important changes in things like speed, how long people wait, and how far they travel, depending on how congested the roads are. Making all these different details comparable by normalizing them helped us spot trends that we might miss if we only looked at the raw data. This graph was really useful for understanding how different levels of congestion affect people's daily drives.
+
+\includegraphics[scale=.24]{img/cluschart.png}
+
+{\small
+  Figure 6: Traffic Bar Chart
+  \par
+  \vspace{6pt}
+}
+
+Then, we brought in a bubble chart (Figure 7) that showed us how long people wait in relation to how congested the roads are, using colors to show different groups of traffic conditions. This chart helped us pick apart the tricky relationship between how long you're stuck waiting and how crowded the roads are. The different colors helped us see patterns in traffic that we might want to look at more closely. This detailed view showed us the variety in traffic conditions and set us up to dig deeper into these patterns.
+
+\includegraphics[scale=.45]{img/bubble.png}
+
+{\small
+  Figure 7: Bubble Chart
+  \par
+  \vspace{6pt}
+}
+
+Adding to the analysis, we examined a scatter plot (Figure 8) that scattered waiting times against traffic congestion scores. Unlike the patterns we expected, this plot revealed no clear-cut line linking waiting times and congestion. Instead, we saw a wide spread of congestion scores, cutting across all waiting times, hinting at a complex web of factors that come into play. The different colors, likely representing various clusters of traffic conditions, painted a picture of the diverse traffic scenarios in play. This deep dive into the data points showed that there's more to congestion than meets the eye, reinforcing the idea that to untangle traffic issues, we need to look beyond the obvious.
+
+\includegraphics[scale=.4]{img/scatter.png}
+
+{\small
+  Figure 8: Scatter plot
+  \par
+  \vspace{6pt}
+}
 
 Looking at the data in this way, going from basic numbers to detailed charts, really showed us how complex traffic in cities can be. It made it clear that we need to use smart, layered ways of analyzing traffic data that can handle the unique and varied rhythms of city streets. The things we learned from looking at the data in this step-by-step way are crucial for making well-informed plans for managing traffic and designing city roads, pushing for approaches that are as varied and dynamic as the traffic patterns they're trying to deal with.
 
@@ -251,17 +318,51 @@ Looking at the data in this way, going from basic numbers to detailed charts, re
 
 The aim of this exercise is to create a deep learning algorithm that will optimize the prediction of house prices.
 
-Firstly, the data needs to be explored and preprocessed. After importing the data, we have seen that there were plenty of records that were missing crucial information. 200 of these records were missing the property price, age of property and the distance to the city center. Due to this, we had no other solution than to drop all these records that were missing important information. After the data was cleared, we started exploring. The seaborn library was used for the plotting of multiple charts, placing features against each other on charts. Also, a heatmap was created based on the correlation between the features. The process of data exploration provided meaningful insights of the data used. From the heatmap (Figure sth) we have seen that the factor that influences the house pricing with an astonishing 0.88 is the size (square\_feet) followed by the number of bedrooms and bathrooms with 0.36, respectively 0.24.
+Firstly, the data needs to be explored and preprocessed. After importing the data, we have seen that there were plenty of records that were missing crucial information. 200 of these records were missing the property price, age of property and the distance to the city center. Due to this, we had no other solution than to drop all these records that were missing important information. After the data was cleared, we started exploring. The seaborn library was used for the plotting of multiple charts, placing features against each other on charts. Also, a heatmap was created based on the correlation between the features. The process of data exploration provided meaningful insights of the data used. From the heatmap (Figure 9) we have seen that the factor that influences the house pricing with an astonishing 0.88 is the size (square\_feet) followed by the number of bedrooms and bathrooms with 0.36, respectively 0.24.
 
-Next, a scatterplot chart of the correlation between property price and square feet was made (FIGURE X). This chart indicates a positive correlation between these two variables and can see that the general trend is rising, which means that larger properties tend to have higher prices. Something worth mentioning is that outliers can be observed, which can suggest that these properties can deviate from the general trend, either negatively or positively, which might suggest further investigation into different factors leading to their distinct pricing.
+\includegraphics[scale=.25]{img/heatDL.png}
 
-Further investigated the property price correlation with the number of bedrooms. The box plot (FIGURE X) can give a representation of how the median property process varies across the number of bedrooms. As the number of bedrooms increases, the median property price tends to rise as well. This aligns with the expectations from our scatterplot model, indicating that more square feet often result in more bedrooms, and therefore the property prices tend to rise. The width of the interquartile range (IQR) in each number of bedrooms, tells us about the variability of the property price, and their range is very wide which indicates that variability. The chart has no special patterns, except for a positive trend.
+{\small
+  Figure 9: Heatmap housing prices
+  \par
+  \vspace{6pt}
+}
 
-Lastly, investigated property price correlation with the number of bathrooms. The box plot gives us a representation of the property prices correlating to the number of bathrooms (Figure X). Generally, as in the other charts, the corresponding median property prices tend to rise as the number of bathrooms increases. But there is something that can be noticeable, which is the outliers, the width of the interquartile range (IQR) provides some narrower IQRs, and some provide wider IQRs. The median property price of having 4 bathrooms is higher than the rest, but the IQR is also narrower than the previous, meaning that the most expensive house on the list is the house with 3 bathrooms and not 4 bathrooms. 
+\includegraphics[scale=.25]{img/dl1.png}
+
+{\small
+  Figure 10: Property price vs Square Feet
+  \par
+  \vspace{6pt}
+}
+
+
+
+Next, a scatterplot chart of the correlation between property price and square feet was made (Figure 10). This chart indicates a positive correlation between these two variables and can see that the general trend is rising, which means that larger properties tend to have higher prices. Something worth mentioning is that outliers can be observed, which can suggest that these properties can deviate from the general trend, either negatively or positively, which might suggest further investigation into different factors leading to their distinct pricing.
+
+\includegraphics[scale=.25]{img/dl2.png}
+
+{\small
+  Figure 11: Box plot for Bedrooms vs Property\_Price
+  \par
+  \vspace{6pt}
+}
+
+
+Further investigated the property price correlation with the number of bedrooms. The box plot (Figure 11) can give a representation of how the median property process varies across the number of bedrooms. As the number of bedrooms increases, the median property price tends to rise as well. This aligns with the expectations from our scatterplot model, indicating that more square feet often result in more bedrooms, and therefore the property prices tend to rise. The width of the interquartile range (IQR) in each number of bedrooms, tells us about the variability of the property price, and their range is very wide which indicates that variability. The chart has no special patterns, except for a positive trend.
+
+\includegraphics[scale=.25]{img/dl3.png}
+
+{\small
+  Figure 12: Box plot for Bathrooms vs Property\_Price
+  \par
+  \vspace{6pt}
+}
+
+
+Lastly, investigated property price correlation with the number of bathrooms. The box plot gives us a representation of the property prices correlating to the number of bathrooms (Figure 12). Generally, as in the other charts, the corresponding median property prices tend to rise as the number of bathrooms increases. But there is something that can be noticeable, which is the outliers, the width of the interquartile range (IQR) provides some narrower IQRs, and some provide wider IQRs. The median property price of having 4 bathrooms is higher than the rest, but the IQR is also narrower than the previous, meaning that the most expensive house on the list is the house with 3 bathrooms and not 4 bathrooms. 
 
 In the regression task for house price prediction, deep learning models showed a high degree of accuracy. The visualization of actual versus predicted prices indicated a strong correlation, validating the effectiveness of the model. To further improve the models, examining the aspects of other variables affecting housing prices could offer a more thorough knowledge of housing prices. 
-
-
 
 \subsection{Natural Language Processing}
 
@@ -269,11 +370,37 @@ In the regression task for house price prediction, deep learning models showed a
 
 Topic modeling further analyzed features such as: uncovering underlying themes within the dataset. By employing various topic modeling algorithms, a comparative analysis is conducted to discern the strengths and weaknesses of each approach. Some algorithms showcase more pronounced distinctions between topics, emphasizing clarity in thematic separation, while others may present nuanced relationships. This comparative exploration aids in selecting the most suitable algorithm for the specific dataset, considering factors like interpretability and the desired granularity of topic separation.
 
+\includegraphics[scale=.1]{img/nlp1.png}
+
+{\small
+  Figure 13: Topics in LDiA model TFIDF
+  \par
+  \vspace{6pt}
+}
+
+\includegraphics[scale=.1]{img/nlp2.png}
+
+{\small
+  Figure 14: Topics in LDiA model BOW
+  \par
+  \vspace{6pt}
+}
+
 (BOW) and Term Frequency-Inverse Document Frequency (TFIDF) methods were strikingly similar. Usually, BOW highlights the raw frequencies of terms, sometimes losing some of its nuance, meanwhile TFIDF emphasizes terms that are more unique in importance to the document in context of the larger corpus. In this case both approaches showed a similar set of terms with also similar frequencies for each topic such as 'one', 'new', 'man', and 'world'. This unusual similarity showed that the weighting mechanism TFIDF uses was not significant enough to provide any preeminence of specific terms that dominate the topic regardless of the weighting scheme.
 
 \subsubsection{Feature Extraction}
 
 The Natural Language Processing (NLP) task advanced significantly following the text processing phase, entering the critical stage of feature extraction. Here, the strategic implementation of Term Frequency (TF) and Term Frequency-Inverse Document Frequency (TF-IDF) techniques played a pivotal role. These methods were instrumental in extracting relevant features from the text, enabling a deeper and more precise exploration of the processed data. The application of these feature extraction techniques was crucial in identifying significant patterns and trends within the dataset, highlighting the subtle intricacies and complexities of textual data.
+\par
+\vspace{6pt}
+
+\includegraphics[scale=.7]{img/nlp3.png}
+
+{\small
+  Figure 15: Word Cloud
+  \par
+  \vspace{6pt}
+}
 
 In the word cloud above we see results of extracting relevant features from the text. We see that the more a word is used in the text description, the larger it is displayed on the word cloud. This highlights the frequent use of words that are central to the overall message or theme of the text. By identifying and analyzing these frequently used words, we can gain valuable insights into the core concepts and topics being discussed.
 
@@ -281,9 +408,33 @@ In the word cloud above we see results of extracting relevant features from the 
 
 Building on this foundation, the NLP's prowess was further exemplified in the task of searching for similar movies. This application showcased the remarkable strength of NLP in forging meaningful connections between diverse texts. The employed algorithm displayed a notable proficiency in identifying and matching similar themes across a range of movie descriptions, demonstrating the advanced capabilities of NLP in thematic matching and content analysis. The success in this particular task underscored the effectiveness of the preceding feature extraction phase, as the accurate identification of themes and patterns in text is contingent upon the quality of the extracted features. This synergy between feature extraction and thematic analysis highlights the cohesive and comprehensive nature of the NLP process, underlining its importance in extracting valuable insights from complex textual datasets. 
 
+\includegraphics[scale=.5]{img/nlp4.png}
+
+{\small
+  Figure 16: Similar movies to “The Dark Knight Rises”
+  \par
+  \vspace{6pt}
+}
+
 If I am assuming that I like “The Dark Knight Rises”, It would recommend these movies, because we used the cosine similarity metric to measure the similarity so the algorithm can suggest movies based on their descriptions in the dataset. 
 
+\includegraphics[scale=.5]{img/nlp5.png}
+
+{\small
+  Figure 17: Similar movies to “Spider-man 3”
+  \par
+  \vspace{6pt}
+}
+
 By analysing the top recommended movies for “Spider-man 3”, there appears to be a mix of genres, indicating that the recommendation system considers various aspects of movie descriptions.
+
+\includegraphics[scale=.5]{img/nlp6.png}
+
+{\small
+  Figure 18: Opposite movie recommendations to “Harry Potter and the Half-Blood Prince”
+  \par
+  \vspace{6pt}
+}
 
 If you were to hate the movie “Harry Potter and the Half-Blood Prince”, we could use the opposite cosine similarity metrices to find the opposite movie. This would come as the recommended movies. 
 
