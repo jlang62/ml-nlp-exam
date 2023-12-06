@@ -1,35 +1,53 @@
 \begin{thebibliography}{xx}
 
-\harvarditem[Bird et~al.]{Bird, Klein \harvardand\ Loper}{2009}{nltk}
-Bird, S., Klein, E. \harvardand\ Loper, E.  \harvardyearleft
-  2009\harvardyearright , {\em Natural Language Processing with Python},
-  O'Reilly Media, Inc.
+\harvarditem[Ali et~al.]{Ali, Faraj, Koya, Ali \harvardand\
+  Faraj}{2014}{ali_data_2014}
+Ali, P. J.~M., Faraj, R.~H., Koya, E., Ali, P. J.~M. \harvardand\ Faraj, R.~H.
+  \harvardyearleft 2014\harvardyearright , `Data normalization and
+  standardization: a technical report', {\em Mach Learn Tech Rep} {\bf
+  1}(1),~1--6.
 
-\harvarditem[Harris et~al.]{Harris, Millman \harvardand\ van~der
-  Walt}{2020}{numpy}
-Harris, C., Millman, K. \harvardand\ van~der Walt, S. e.~a.  \harvardyearleft
-  2020\harvardyearright , `Array programming with numpy'.
+\harvarditem{Gulli \harvardand\ Pal}{2017}{gulli_deep_2017}
+Gulli, A. \harvardand\ Pal, S.  \harvardyearleft 2017\harvardyearright , {\em
+  Deep learning with {Keras}}, Packt Publishing Ltd.
 
-\harvarditem{Lane}{2019}{lane2019}
-Lane, H.  \harvardyearleft 2019\harvardyearright , {\em Natural Language
-  Processing in Action: Understanding, Analyzing, and Generating Text with
-  Python}, 1st edn, Manning.
+\harvarditem{Kononenko}{2007}{kononenko_machine_2007}
+Kononenko, I.  \harvardyearleft 2007\harvardyearright , `Machine learning and
+  data mining : introduction to principles and algorithms'.
+\newblock ISBN: 0-85709-944-2 Place: Chichester, England.
 
-\harvarditem{{\em Matplotlib—Visualization with Python}}{n.d.}{matplotlib}
-{\em Matplotlib—Visualization with Python}  \harvardyearleft
-  n.d.\harvardyearright , \url{https://matplotlib.org/}.
-\newblock Retrieved 28 October 2023.
+\harvarditem{Lane}{2019}{lane_natural_2019}
+Lane, H.  \harvardyearleft 2019\harvardyearright , `Natural language processing
+  in action : understanding, analyzing, and generating text with {Python}'.
+\newblock Edition: 1st edition. ISBN: 1-63835-689-0 Place: Shelter Island, New
+  York.
 
-\harvarditem[Pedregosa et~al.]{Pedregosa, Varoquaux, Gramfort, Michel, Thirion,
-  Grisel \harvardand\ Duchesnay}{2011}{scikit-learn}
-Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O.
-  \harvardand\ Duchesnay, E.  \harvardyearleft 2011\harvardyearright ,
-  `Scikit-learn: Machine learning in python', {\em Journal of Machine Learning
-  Research} .
+\harvarditem{Madhulatha}{2012}{madhulatha_overview_2012}
+Madhulatha, T.~S.  \harvardyearleft 2012\harvardyearright , `An overview on
+  clustering methods', {\em arXiv preprint arXiv:1205.1117} .
 
-\harvarditem{{\em Python Data Analysis Library}}{n.d.}{pandas}
-{\em Python Data Analysis Library}  \harvardyearleft n.d.\harvardyearright ,
-  \url{https://pandas.pydata.org}.
-\newblock Retrieved 28 October 2023.
+\harvarditem[Nguyen et~al.]{Nguyen, Ly, Ho, Al-Ansari, Le, Tran, Prakash
+  \harvardand\ Pham}{2021}{shen_influence_2021}
+Nguyen, Q.~H., Ly, H.-B., Ho, L.~S., Al-Ansari, N., Le, H.~V., Tran, V.~Q.,
+  Prakash, I. \harvardand\ Pham, B.~T.  \harvardyearleft 2021\harvardyearright
+  , `Influence of {Data} {Splitting} on {Performance} of {Machine} {Learning}
+  {Models} in {Prediction} of {Shear} {Strength} of {Soil}', {\em Mathematical
+  Problems in Engineering} {\bf 2021},~4832864.
+\newblock Publisher: Hindawi.
+\newline\harvardurl{https://doi.org/10.1155/2021/4832864}
+
+\harvarditem[Sen et~al.]{Sen, Hajra \harvardand\
+  Ghosh}{2020}{sen_supervised_2020}
+Sen, P.~C., Hajra, M. \harvardand\ Ghosh, M.  \harvardyearleft
+  2020\harvardyearright , Supervised classification algorithms in machine
+  learning: {A} survey and review, {\em in} `Emerging {Technology} in
+  {Modelling} and {Graphics}: {Proceedings} of {IEM} {Graph} 2018', Springer,
+  pp.~99--111.
+
+\harvarditem{{\em
+  sklearn.neighbors.{KNeighborsRegressor}}}{n.d.}{noauthor_sklearnneighborskneighborsregressor_nodate}
+{\em sklearn.neighbors.{KNeighborsRegressor}}  \harvardyearleft
+  n.d.\harvardyearright .
+\newline\harvardurl{https://scikit-learn/stable/modules/generated/sklearn.neighbors.KNeighborsRegressor.html}
 
 \end{thebibliography}

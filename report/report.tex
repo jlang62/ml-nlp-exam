@@ -41,18 +41,18 @@
 \onehalfspacing
 
 
-\title{Text Dataset Comparison: BoW, Similarity, and Library Performance}
+\title{Machine Learning and Natural Language Processing Report}
 \author{
   Jesse Lang \\
   Institution 1 \\
   Email 1 \and
-  Member 2 \\
+  Victor Figueroa \\
   Institution 2 \\
   Email 2 \and
-  Member 3 \\
+  Alin-Eugen Gusanu \\
   Institution 3 \\
   Email 3 \and
-  Member 4 \\
+  Hashem Sheikh \\
   Institution 4 \\
   Email 4
 }
@@ -62,24 +62,28 @@
 \maketitle
 
 % Display team members' information below the title
-\begin{center}
-\begin{tabular}{@{}ll}
-  Victor Hugo Figueroa & Alin-Eugen Gusanu \\
-  Kristiania University & Kristiania University \\
-  vifi001@student.kristiania.no & algu008@student.kristiania.no
-\end{tabular}
-\end{center}
-% Display team members' information below the title
-\begin{center}
-\begin{tabular}{@{}ll}
-  Hashem Sheikh & Jesse Lang \\
-  Kristiania University & Kristiania University \\
-  hash011@student.kristiania.no & jela019@student.kristiania.no
-\end{tabular}
-\end{center}
+% \begin{center}
+% \begin{tabular}{@{}ll}
+%   Victor Hugo Figueroa & Alin-Eugen Gusanu \\
+%   Kristiania University & Kristiania University \\
+%   vifi001@student.kristiania.no & algu008@student.kristiania.no
+% \end{tabular}
+% \end{center}
+% % Display team members' information below the title
+% \begin{center}
+% \begin{tabular}{@{}ll}
+%   Hashem Sheikh & Jesse Lang \\
+%   Kristiania University & Kristiania University \\
+%   hash011@student.kristiania.no & jela019@student.kristiania.no
+% \end{tabular}
+% \end{center}
+
+\tableofcontents
 
 % Begin the two-column layout
+\newpage
 \begin{multicols}{2}
+
 
 \section{Abstract}
 
@@ -105,14 +109,15 @@ The last task provides a practical use of the exercise. In this task, a movie ti
 
 \section{Literature}
 
-\paragraph*{\textbf{Machine Learning Literature Review:}}\mbox{}\\
+\subsection{Machine Learning}
+
 Like every fast-evolving field, machine learning has witnessed extensive research in various domains, including topics from health monitoring to urban mobility patterns. For the solutioning of these diverse problems, a multitude of algorithms have been developed and polished. Algorithms such as Decision Trees, Support Vector Machines (SVM) and Random Forests offer different approaches towards categorization problems, and the most suitable algorithm is to be chosen based on the dataset's characteristics. Research shows that usually ensemble methods often prove more effective at handling complex, heterogeneous data.
 
 In the clustering domain, particularly relevant to urban mobility patterns, literature suggests the utilization of K-Means, DBSCAN, and hierarchical clustering, as discussed in the book "Machine Learning and Data Mining: Introduction to Principles and Algorithms." Studies emphasize the importance of feature enginering and preprocessing techniques, as outlined in the aforementioned book, in enhancing clustering accuracy. Additionally, research underscores the significance of determining an optimal number of clusters, a step crucial to ensuring the interpretability and practicality of clustering results.
 
 Deep learning-based regression tasks, as sen in the "House\_Price\_Prediction" dataset, have garnered attention in recent literature, including insights from "Machine Learning and Data Mining: Introduction to Principles and Algorithms." Architectural designs of neural networks, as discussed in the book, including the number of layers, types of layers, and activation functions, significantly impact model performance. Research indicates the efficacy of dep neural networks in capturing intricate patterns in housing datasets, with the rectify of vanishing gradient problems and regularization techniques, as detailed in the book, being areas of active exploration.
 
-\paragraph*{\textbf{Natural Language Processing Literature Review:}}\mbox{}\\
+\subsection{Natural Language Processing}
 In the realm of natural language processing (NLP), a critical component of the exam, practical tasks often involve text processing, feature extraction, and topic modeling. Previous studies in text processing recommend employing techniques such as lowercasing, stop-word removal, and special character elimination. Moreover, the choice of representation schemes, such as Term Frequency-Inverse Document Frequency (TF-IDF), has ben extensively explored, with considerations for its impact on downstream tasks like topic modeling. 
 
 Topic modeling, a significant aspect of NLP, has sen diverse approaches, including Late nt Dirichlet Allocation (LDA) and Truncated Singular Value Decomposition (Truncated SVD). Literature suggests that the selection of a suitable algorithm depends on the nature of the dataset and the interpretability desired. Comparative studies have highlighted the strengths and limitations of each method, aiding researchers in making informed choices for their specific NLP tasks. 
@@ -135,7 +140,7 @@ This pipeline used the implementation of the KNeighborsRegressor (scikit-learn.o
 Libraries like sklearn provide functions to normalise the dataset for a more equal distribution. Normalization is the process of applying a casting of a specific range (e.g., 0 and 1, or between -1 and +1) to the dataset. This method is essential when there are big differences in the arrays of different features. Furthermore, this way of scaling is convenient when the data set does not contain any outliers (Ali et al., 2014).
 
 % insert image
-\includegraphics[scale=.35]{img/norm1.png}
+\includegraphics[scale=.3]{img/norm1.png}
 
 {\small
   Figure 1: Normalization to the range 0 to +1
@@ -146,7 +151,7 @@ Libraries like sklearn provide functions to normalise the dataset for a more equ
 
 Figure 1 visualizes the normalization process and the necessary steps to cast it to the range 0, 1. To get the normalized value, the equation \(x' = \frac{x - \text{min}}{\text{max} - \text{min}}\) can be used, where \(x\) represents the value before and \(x'\) after normalization. The other two values are the minimum and maximum values of the given feature array.
 
-\includegraphics[scale=.35]{img/norm2.png}
+\includegraphics[scale=.3]{img/norm2.png}
 
 {\small
   Figure 2: Normalization to the range -1 to +1
@@ -450,16 +455,16 @@ In conclusion this research has delved into machine learning (ML) and natural la
 
 
 \phantom{
-  \cite{lane2019}
-  \cite{pandas}
-  \cite{nltk}
-  \cite{numpy}
-  \cite{scikit-learn}
-  \cite{matplotlib}
+  \cite{lane_natural_2019}
+  \cite{kononenko_machine_2007}
+  \cite{noauthor_sklearnneighborskneighborsregressor_nodate}
+  \cite{ali_data_2014}
+  \cite{shen_influence_2021}
+  \cite{sen_supervised_2020}
+  \cite{madhulatha_overview_2012}
+  \cite{gulli_deep_2017}
 }
 
 
 % End the two-column layout
-
-
 \end{document}
